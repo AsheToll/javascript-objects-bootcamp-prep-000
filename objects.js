@@ -103,3 +103,21 @@ const recipe = { eggs: 3 };
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup'); // `{ eggs: 3, choclate: '1 cup' }`
 
 recipe // { eggs: 3 }
+
+// make update function terser
+function updateObjectWithObject(targetObject, updatesObject) {
+  return Object.assign({}, targetObject, updatesObject);
+}
+
+// Deleting a Key-Value Pair
+var meals = {
+  breakfast: 'oatmeal',
+  lunch: 'turkey sandwich',
+  dinner: 'steak and potatoes'
+};
+
+// delete operator returns true if it's successfully deleted, false otherwise
+
+delete meals.dinner; // true
+
+meals; // { breakfast: 'oatmeal', lunch: 'turkey sandwich' }
