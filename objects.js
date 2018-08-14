@@ -121,3 +121,26 @@ var meals = {
 delete meals.dinner; // true
 
 meals; // { breakfast: 'oatmeal', lunch: 'turkey sandwich' }
+
+// Changing a Value
+var meals = {
+  breakfast: 'oatmeal',
+  lunch: 'turkey sandwich',
+  dinner: 'steak and potatoes'
+};
+
+meals.breakfast = ['oatmeal','banana'];
+
+meals; // { breakfast: ['oatmeal', 'banana'], lunch: 'turkey sandwich', dinner: 'steak and potatoes' }
+
+// Change a balue non-destructively using Object.assign:
+var meals = {
+  breakfast: 'oatmeal',
+  lunch: 'turkey sandwich',
+  dinner: 'steak and potatoes'
+};
+
+Object.assign({}, meals, { breakfast: ['oatmeal', 'banana'] }) // { breakfast: ['oatmeal', 'banana'], lunch: 'turkey sandwich', dinner: 'steak and potatoes' }
+
+
+})
