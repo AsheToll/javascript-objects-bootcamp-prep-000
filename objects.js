@@ -50,4 +50,6 @@ var meals = {
   lunch: 'burrito',
   dinner: 'steak'
 }
+
+meals.snack = 'yogurt';
 }
