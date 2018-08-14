@@ -37,3 +37,17 @@ meals.breakfast // 'oatmeal'
 
 // square-bracket notation
 meals['breakfast'] // 'oatmeal'
+meals[firstMeal] // 'oatmeal'
+
+meals.firstMeal // undefined
+
+// DOT NOTATION TAKES KEY AS LITERAL STRING
+// MUST USE BRACKET NOTATION FOR VALUES THAT BELONG TO VARIABLE KEY
+
+// Adding to An Object
+var meals = {
+  breakfast: 'oatmeal',
+  lunch: 'burrito',
+  dinner: 'steak'
+}
+}
