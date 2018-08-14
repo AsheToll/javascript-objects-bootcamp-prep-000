@@ -87,7 +87,7 @@ recipe // { eggs: 3, flour: '3 cups' }
 // copies from left to right onto target objects
 // if two objects share a key, right-most object's value for that key will win
 
-Object.assign({}, foo: 'bar' }); // { foo: 'bar' }
+Object.assign({}, { foo: 'bar' }); // { foo: 'bar' }
 Object.assign({ eggs: 3 }, { flour: '1 cup' }) // { eggs: 3, flour: '1 cup' }
 Object.assign({ eggs: 3 }, { chocolate: '1 cup', flour: '2 cups' }, { flour: '1/2 cup' }); // { eggs: 3, chocolate: '1 cup', flour: '1/2 cup' }
 
@@ -142,5 +142,5 @@ var meals = {
 
 Object.assign({}, meals, { breakfast: ['oatmeal', 'banana'] }) // { breakfast: ['oatmeal', 'banana'], lunch: 'turkey sandwich', dinner: 'steak and potatoes' }
 
-
+meals; // { breakfast: 'oatmeal', lunch: 'turkey sandwich', dinner: 'steak and potatoes' };
 })
