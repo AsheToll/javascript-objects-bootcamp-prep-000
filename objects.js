@@ -85,6 +85,16 @@ recipe // { eggs: 3, flour: '3 cups' }
 // first value is target object that gets modified
 // all values afterward can be any number of objects
 // copies from left to right onto target objects
+// if two objects share a key, right-most object's value for that key will win
 
 Object.assign({}, foo: 'bar' }); // { foo: 'bar' }
 Object.assign({ eggs: 3 }, { flour: '1 cup' }) // { eggs: 3, flour: '1 cup' }
+Object.assign({ eggs: 3 }, { chocolate: '1 cup', flour: '2 cups' }, { flour: '1/2 cup' }); // { eggs: 3, chocolate: '1 cup', flour: '1/2 cup' }
+
+// update function in a non-destructive way:
+function updateObjectWithKeyAndValue(obj, key, value) {
+  return Object.assign({}, obj, { [key]: value });
+}
+// merge everything into a new object: empty {}
+// Otherwise, the object obj will be modified
+}
