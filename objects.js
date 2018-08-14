@@ -15,3 +15,10 @@ var meals = {
 }
 
 meals // { breakfast: 'bacon'}
+
+// values don't have to be unique
+var meals = {
+  breakfast: 'avocado',
+  lunch: 'avocado',
+  dinner: 'avocado'
+}
