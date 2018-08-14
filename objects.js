@@ -97,4 +97,9 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 }
 // merge everything into a new object: empty {}
 // Otherwise, the object obj will be modified
-}
+
+const recipe = { eggs: 3 };
+
+updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup'); // `{ eggs: 3, choclate: '1 cup' }`
+
+recipe // { eggs: 3 }
