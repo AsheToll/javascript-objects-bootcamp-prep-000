@@ -25,4 +25,8 @@ var meals = {
 
 const firstMeal = 'breakfast';
 var meals = { firstMeal: 'oatmeal' };
-meals // { firstMeal: "breakfast" }
+meals // { firstMeal: "oatmeal" }
+
+// using variables as object keys
+var meals = { [firstMeal]: 'oatmeal' };
+meals // { breakfast: 'oatmeal' }
