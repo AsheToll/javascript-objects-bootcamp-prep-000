@@ -52,4 +52,19 @@ var meals = {
 }
 
 meals.snack = 'yogurt';
-}
+
+meals.snack // 'yogurt'
+meals['snack'] // 'yogurt'
+meals.lunch // 'burrito'
+
+// add key-value pairs using bracket notation:
+meals['second breakfast'] = 'bagel';
+
+// use variables as keys this way:
+var sweetMeal = 'dessert';
+meals[sweetMeal] = 'cake';
+meals.dessert // 'cake'
+meals[sweetMeal] // 'cake'
+
+// update existing key-value pairs by using the key:
+meals.breakfast = 'cereal';
