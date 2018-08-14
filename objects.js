@@ -68,3 +68,23 @@ meals[sweetMeal] // 'cake'
 
 // update existing key-value pairs by using the key:
 meals.breakfast = 'cereal';
+
+// Destructively Updating an Object
+function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
+  obj[key] = value;
+  return obj;
+}
+
+const recipe = { eggs: 3 };
+
+destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups'); // { eggs: 3, flour: '3 cups' }
+recipe // { eggs: 3, flour: '3 cups' }
+
+// Object.assign()
+// create new object & pass it properties from existing objects
+// first value is target object that gets modified
+// all values afterward can be any number of objects
+// copies from left to right onto target objects
+
+Object.assign({}, foo: 'bar' }); // { foo: 'bar' }
+Object.assign({ eggs: 3 }, { flour: '1 cup' }) // { eggs: 3, flour: '1 cup' }
