@@ -144,6 +144,7 @@ Object.assign({}, meals, { breakfast: ['oatmeal', 'banana'] }) // { breakfast: [
 
 meals; // { breakfast: 'oatmeal', lunch: 'turkey sandwich', dinner: 'steak and potatoes' };
 
+// INSTRUCTIONS
 var playlist = { artistName: "songTitles" };
 
 function updatePlaylist(playlist, artistName, songTitle) {
