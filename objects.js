@@ -143,4 +143,15 @@ var meals = {
 Object.assign({}, meals, { breakfast: ['oatmeal', 'banana'] }) // { breakfast: ['oatmeal', 'banana'], lunch: 'turkey sandwich', dinner: 'steak and potatoes' }
 
 meals; // { breakfast: 'oatmeal', lunch: 'turkey sandwich', dinner: 'steak and potatoes' };
-})
+
+var playlist = { artistName: "songTitles" };
+
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
+  return playlist;
+}
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist.artistName;
+  return playlist;
+}
