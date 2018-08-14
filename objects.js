@@ -1,6 +1,6 @@
 // Creating Objects
 var meals = {}
-var meals = new Object(); // Object Contructor
+// var meals = new Object(); // Object Contructor
 
 var meals = { breakfast: "oatmeal" }; // breakfast is the key, oatmeal is the value
 var meals = new Object({ breakfast: 'oatmeal' });
@@ -11,7 +11,7 @@ var meals = new Object({ breakfast: 'oatmeal' });
 // keys must be unique (!!!)
 var meals = {
   breakfast: 'eggs',
-  breakfast: 'bacon'
+  // breakfast: 'bacon'
 }
 
 meals // { breakfast: 'bacon'}
@@ -98,7 +98,7 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 // merge everything into a new object: empty {}
 // Otherwise, the object obj will be modified
 
-const recipe = { eggs: 3 };
+// const recipe = { eggs: 3 };
 
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup'); // `{ eggs: 3, choclate: '1 cup' }`
 
