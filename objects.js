@@ -22,3 +22,7 @@ var meals = {
   lunch: 'avocado',
   dinner: 'avocado'
 }
+
+const firstMeal = 'breakfast';
+var meals = { firstMeal: 'oatmeal' };
+meals // { firstMeal: "breakfast" }
