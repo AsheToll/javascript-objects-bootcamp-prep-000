@@ -30,3 +30,10 @@ meals // { firstMeal: "oatmeal" }
 // using variables as object keys
 var meals = { [firstMeal]: 'oatmeal' };
 meals // { breakfast: 'oatmeal' }
+
+// accessing values in an object
+// dot notation
+meals.breakfast // 'oatmeal'
+
+// square-bracket notation
+meals['breakfast'] // 'oatmeal'
